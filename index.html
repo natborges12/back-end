@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Variáveis de JS</title>
+</head>
+<body>
+    <script>
+        //Uso do VAR
+        var nome = "Ana";
+        console.log(nome);
+
+        //uso do let
+        let idade = 17;
+        console.log(idade);
+
+        //uso do CONST
+        const saldo = 3336.76;
+        console.log(saldo);
+
+        let a = 5;
+        let b = 10;
+        console.log(a == b);
+        console.log(a == 5);
+        console.log(2 * a == b);
+        console.log(2 * a === b);
+        console.log(a != b);
+        console.log(a !== 5);
+        console.log(a > b);
+        console.log(a < b);
+        console.log(a >= 5);
+        console.log(a <= 10);
+
+        let status = idade >= 18 ? 'adulto' : 'di menor';
+        console.log(status);
+
+        const saudacao = `Olá, ${nome}!`;
+        console.log(saudacao);
+    </script>
+
+    <h2>Qual a capital do Brasil</h2>
+    <button onclick="verificarResp('A')">A- Brasília</button>
+    <button onclick="verificarResp('B')">B- ÉRREJOTA</button>
+    <button onclick="verificarResp('C')">C- SP</button>
+    <button onclick="verificarResp('D')">D- BH</button>
+    
+    <script>
+        function verificarResp(resp) {
+            var correta = "A";
+            if (resp === correta) {
+                alert('Acertou');
+            } else {
+                alert('Errou!!!!!!!');
+            }
+        }
+    </script>
+</body>
+</html>
